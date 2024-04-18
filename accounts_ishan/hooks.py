@@ -19,9 +19,6 @@ app_license = "mit"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "accounts_ishan/public/scss/website"
-doctype_js = {
-    "Sales Invoice": "public/js/test.js"
-}
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
@@ -128,6 +125,16 @@ doc_events = {
 	"Sales Invoice": {
         "before_save" : "accounts_ishan.accounts_ishan.custom_script.sales_invoice.before_save",
 	},
+	"Purchase Invoice": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_invoice.before_save",
+	},
+	"Payment Entry": {
+        "before_submit" : "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_submit",
+		"before_update_after_submit": "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_update_after_submit",
+	},
+	"Bank Account": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.bank_account.before_save",
+	}
 }
 
 # Scheduled Tasks

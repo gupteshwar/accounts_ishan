@@ -128,6 +128,12 @@ doc_events = {
 	"Purchase Invoice": {
         "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_invoice.before_save",
 	},
+	"Purchase Order": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_order.before_save",
+	},
+	"Supplier": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.supplier.before_save",
+	},
 	"Payment Entry": {
         "before_submit" : "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_submit",
 		"before_update_after_submit": "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_update_after_submit",

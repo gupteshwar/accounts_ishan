@@ -123,21 +123,20 @@ override_doctype_class = {
 # Hook on document methods and events
 
 doc_events = {
-	"Sales Invoice": {
-        "before_save" : "accounts_ishan.accounts_ishan.custom_script.sales_invoice.before_save",
+    "Supplier": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.supplier.before_save",
+	},
+    "Purchase Order": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_order.before_save",
 	},
 	"Purchase Invoice": {
         "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_invoice.before_save",
 	},
-	"Purchase Order": {
-        "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_order.before_save",
-	},
-	"Supplier": {
-        "before_save" : "accounts_ishan.accounts_ishan.custom_script.supplier.before_save",
+    "Sales Invoice": {
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.sales_invoice.before_save",
 	},
 	"Payment Entry": {
-        "before_submit" : "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_submit",
-		"before_update_after_submit": "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_update_after_submit",
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.payment_entry.before_save",
 	},
 	"Bank Account": {
         "before_save" : "accounts_ishan.accounts_ishan.custom_script.bank_account.before_save",

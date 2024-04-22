@@ -9,7 +9,6 @@ import erpnext
 
 form_grid_templates = {"journal_entries": "templates/form_grid/bank_reconciliation_grid.html"}
 
-
 class CustomBankClearance(BankClearance):
     from typing import TYPE_CHECKING
 

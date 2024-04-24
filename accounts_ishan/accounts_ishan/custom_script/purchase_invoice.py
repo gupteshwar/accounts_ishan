@@ -19,7 +19,7 @@ def before_save(doc,method=None):
     json_data = response.json()
     if 'error' in json_data['message']:
         error_message = json_data['message']['error']['message']
-        frappe.msgrpint(f"API error occurred: {error_message}")
+        frappe.msgprint(f"API error occurred: {error_message}")
         return
     else:
         if (json_data['message']['status'] == 'SUCCESS' and

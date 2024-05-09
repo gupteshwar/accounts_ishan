@@ -124,7 +124,7 @@ override_doctype_class = {
 
 doc_events = {
     "Supplier": {
-        "before_save" : "accounts_ishan.accounts_ishan.custom_scri	pt.supplier.before_save",
+        "before_save" : "accounts_ishan.accounts_ishan.custom_script.supplier.before_save",
 	},
     # "Purchase Order": {
     #     "before_save" : "accounts_ishan.accounts_ishan.custom_script.purchase_order.before_save",

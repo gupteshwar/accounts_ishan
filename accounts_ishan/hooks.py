@@ -29,6 +29,7 @@ app_license = "mit"
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Fixed Deposit" : "accounts_ishan/accounts_ishan/doctype/fixed_deposit/fixed_deposit_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -140,7 +141,10 @@ doc_events = {
 	},
 	"Bank Account": {
         "before_save" : "accounts_ishan.accounts_ishan.custom_script.bank_account.before_save",
-	}
+	},
+    "Journal Entry": {
+    	"on_cancel": "accounts_ishan.accounts_ishan.doctype.journal_entry.on_cancel"
+    }
 }
 
 # Scheduled Tasks

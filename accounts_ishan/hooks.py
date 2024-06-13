@@ -28,7 +28,10 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-doctype_js = {"Journal Entry": "public/js/journal_entry.js"}
+doctype_js = {
+    "Journal Entry": "public/js/journal_entry.js",
+    "Bank Guarantee": "public/js/bank_guarantee.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 doctype_list_js = {
     "Fixed Deposit" : "accounts_ishan/accounts_ishan/doctype/fixed_deposit/fixed_deposit_list.js",
@@ -148,7 +151,8 @@ doc_events = {
 	},
     "Journal Entry": {
     	"on_cancel": "accounts_ishan.accounts_ishan.doctype.journal_entry.on_cancel",
-        "on_cancel": "accounts_ishan.accounts_ishan.custom_script.journal_entry.on_cancel"
+        "on_cancel": "accounts_ishan.accounts_ishan.custom_script.journal_entry.on_cancel",
+        "on_submit": "accounts_ishan.accounts_ishan.custom_script.journal_entry.on_submit"
     },
     "EMD": {
 		"validate":"accounts_ishan.accounts_ishan.doctype.emd.emd.validate"

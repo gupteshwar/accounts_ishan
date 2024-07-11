@@ -30,12 +30,13 @@ app_license = "mit"
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
     "Journal Entry": "public/js/journal_entry.js",
-    "Bank Guarantee": "public/js/bank_guarantee.js"
+    "Bank Guarantee": "public/js/bank_guarantee.js",
+    "Payment Entry": "public/js/payment_entry.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 doctype_list_js = {
     "Fixed Deposit" : "accounts_ishan/accounts_ishan/doctype/fixed_deposit/fixed_deposit_list.js",
-    "EMD" : "accounts_ishan/accounts_ishan/doctype/emd/emd_list.js",
+    "EMD" : "accounts_ishan/accounts_ishan/doctype/emd/emd_list.js"
 }
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
